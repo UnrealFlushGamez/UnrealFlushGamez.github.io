@@ -1,0 +1,85 @@
+# Site settings
+title: UnrealFlushGamez
+description: Your ultimate gaming destination - tutorials, reviews, and community
+url: "https://aslmaker.me"
+baseurl: ""
+
+# Author information
+author:
+  name: UnrealFlushGamez Team
+  email: contact@unrealflushgamez.com
+
+# Social media
+social:
+  youtube: "#"
+  discord: "#"
+  twitter: "#"
+  instagram: "#"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .gitignore
+
+# Include files
+include:
+  - .htaccess
+  - _pages
+
+# Collections
+collections:
+  games:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# SEO and analytics
+google_analytics: # Add your Google Analytics ID here
+google_site_verification: # Add your Google Site Verification code here
+
+# Site configuration
+timezone: UTC
+encoding: utf-8
+lang: en
+
+# GitHub Pages specific
+github_username: UnrealFlushGamez
+repository: UnrealFlushGamez/UnrealFlushGamez.github.io
